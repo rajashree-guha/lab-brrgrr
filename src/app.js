@@ -91,28 +91,28 @@ document.querySelector(".btn-patty").onclick = function () {
 };
 
 // Trial 2 - Setup event listener for the cheese button
-document.querySelector(".btn-cheese").onclick = function () {
+document.querySelector(".btn-cheese").addEventListener("click",function () {
   state.Cheese = !state.Cheese;
   renderAll();
-};
+});
 // Trial 2 - Setup event listener for the tomatoes button
-document.querySelector(".btn-tomatoes").onclick = function () {
+document.querySelector(".btn-tomatoes").addEventListener("click" ,function () {
   state.Tomatoes = !state.Tomatoes;
   renderAll();
-};
+});
 
 // Trial 2 - Setup event listener for the onion button
 
-document.querySelector(".btn-onions").onclick = function () {
+document.querySelector(".btn-onions").addEventListener("click",function () {
   state.Onions = !state.Onions;
   renderAll();
-};
+});
 // Trial 2 - Setup event listener for the lettuce button
 
-document.querySelector(".btn-lettuce").onclick = function () {
+document.querySelector(".btn-lettuce").addEventListener("click" ,function () {
   state.Lettuce = !state.Lettuce;
   renderAll();
-};
+});
 //Challenge 1 - Add/Remove the class active to the buttons based on state
 
 function renderButtons(){
